@@ -26,6 +26,8 @@ class XiaohuaSpiderPipeline(object):
             else:
                 print('{}下载失败'.format(img_url))
             #保存图片
+
+
             with open(img_path,mode='wb')as f:
                 f.write(img_bytes)
             print('{}下载成功'.format(img_path))
